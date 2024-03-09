@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        Product p = new Product();
+        product p = new product();
         int result1 = p.product(2, 3);
         int result2 = p.product(2, 3, 4);
         double result3 = p.product(2.5, 3.5);
