@@ -1,0 +1,36 @@
+ class Main {
+    public static void main(String[] args) {
+        // Task 2: Create object of Product called p
+        Product p = new Product();
+
+        // Task 3: Call method product(int x, int y)
+        int result1 = p.product(2, 3);
+        System.out.println("Product of 2 and 3 is: " + result1);
+
+        // Task 4: Call overloaded method product(int x, int y, int z)
+        int result2 = p.product(2, 3, 4);
+        System.out.println("Product of 2, 3, and 4 is: " + result2);
+
+        // Task 5: Call overloaded method product(double x, double y)
+        double result3 = p.product(2.5, 3.5);
+        System.out.println("Product of 2.5 and 3.5 is: " + result3);
+    }
+
+    // Task 1: Create class Product
+    static class Product {
+        // Task 3: Method product(int x, int y)
+        public int product(int x, int y) {
+            return x * y;
+        }
+
+        // Task 4: Overloaded method product(int x, int y, int z)
+        public int product(int x, int y, int z) {
+            return x * y * z;
+        }
+
+        // Task 5: Overloaded method product(double x, double y)
+        public double product(double x, double y) {
+            return x * y;
+        }
+    }
+}
