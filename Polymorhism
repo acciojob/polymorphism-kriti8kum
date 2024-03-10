@@ -1,21 +1,31 @@
-class Main {
-    public static void main(String[] args) {
-        
-        Product p = new Product();
-               System.out.println( p.product(2, 3));
+ package com.driver;
 
-        
-              System.out.println( p.product(2, 3, 4));    System.out.println(p.product(2.6, 3.5) );
-    }
-
+import java.util.*;
+public class Main {
     
- public   static class Product {
-        
+    public static void main(String[] args) {
+      
+      Product p=new Product();
+         System.out.println( p.product(1,2));
+         System.out.println(p.product(1,2,3));
+         System.out.println(p.product(23.22,34.22));
+     
+    }
+    public static class Product{
         public int product(int x, int y) {
-            return x * y;
+            return x*y;
         }
-
         
-        public int product(int x, int y, int z) {
-            return x * y * z;
-        }
+    
+   //  @overloaded
+      public int product(int x, int y, int z) {
+          return x*y*z;
+          
+      }
+    //  @overloaded
+      public double product(double x, double y) {
+          return x*y;
+          
+      }
+      }
+}
