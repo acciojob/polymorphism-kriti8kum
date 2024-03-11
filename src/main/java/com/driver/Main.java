@@ -1,13 +1,12 @@
 package com.driver;
 import java.util.*;
-class Main {
+public class Main {
     public static void main(String[] args) {
         
         Product p = new Product();
                System.out.println( p.product(2, 3));
-
-        
-              System.out.println( p.product(2, 3, 4));    System.out.println(p.product(2.6, 3.5) );
+               System.out.println( p.product(2, 3, 4));   
+               System.out.println(p.product(2.6, 3.5) );
     }
 
     
